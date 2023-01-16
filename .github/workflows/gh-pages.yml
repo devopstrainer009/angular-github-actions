@@ -24,12 +24,6 @@ jobs:
       run: npm run test:headless
 
     - name: Build
-      run: npm run build:prod
+      run: ls -ltr
 
-    - name: Deploy
-      if: success()
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist/angular-github-actions
-        enable_jekyll: true
+
