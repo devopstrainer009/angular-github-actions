@@ -21,7 +21,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: npm run test --watch --browsers=ChromeHeadless
+      run: npm run test:headless
 
     - name: Build
       run: ls -ltr
